@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E6EC25A16C7B0E500786BCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC25916C7B0E500786BCC /* UIKit.framework */; };
+		0E6EC25C16C7B0E500786BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC25B16C7B0E500786BCC /* Foundation.framework */; };
+		0E6EC25E16C7B0E500786BCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC25D16C7B0E500786BCC /* CoreGraphics.framework */; };
+		0E6EC26416C7B0E500786BCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0E6EC26216C7B0E500786BCC /* InfoPlist.strings */; };
+		0E6EC26616C7B0E500786BCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EC26516C7B0E500786BCC /* main.m */; };
+		0E6EC26A16C7B0E500786BCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EC26916C7B0E500786BCC /* AppDelegate.m */; };
+		0E6EC26C16C7B0E500786BCC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E6EC26B16C7B0E500786BCC /* Default.png */; };
+		0E6EC26E16C7B0E500786BCC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E6EC26D16C7B0E500786BCC /* Default@2x.png */; };
+		0E6EC27016C7B0E500786BCC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E6EC26F16C7B0E500786BCC /* Default-568h@2x.png */; };
+		0E6EC27316C7B0E500786BCC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E6EC27116C7B0E500786BCC /* MainStoryboard.storyboard */; };
+		0E6EC27616C7B0E600786BCC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E6EC27516C7B0E600786BCC /* ViewController.mm */; };
+		0E6EC28116C7B49000786BCC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC28016C7B49000786BCC /* libz.dylib */; };
+		0E6EC28316C7B49C00786BCC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC28216C7B49C00786BCC /* libxml2.dylib */; };
+		0E6EC28516C7B4A700786BCC /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC28416C7B4A700786BCC /* CoreMotion.framework */; };
+		0E6EC28716C7B4B300786BCC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC28616C7B4B300786BCC /* OpenGLES.framework */; };
+		0E6EC28916C7B4C100786BCC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC28816C7B4C100786BCC /* AudioToolbox.framework */; };
+		0E6EC28B16C7B4CC00786BCC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC28A16C7B4CC00786BCC /* QuartzCore.framework */; };
+		0E6EC28D16C7B4D700786BCC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC28C16C7B4D700786BCC /* CoreVideo.framework */; };
+		0E6EC28F16C7B4E300786BCC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC28E16C7B4E300786BCC /* CoreMedia.framework */; };
+		0E6EC29116C7B4EF00786BCC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC29016C7B4EF00786BCC /* CoreLocation.framework */; };
+		0E6EC29316C7B4FA00786BCC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC29216C7B4FA00786BCC /* AVFoundation.framework */; };
+		0E6EC29516C7B50500786BCC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC29416C7B50500786BCC /* MediaPlayer.framework */; };
+		0E6EC29716C7B52400786BCC /* metaioSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E6EC29616C7B52400786BCC /* metaioSDK.framework */; };
+		0E97115216C7B64900B62F51 /* EAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E97114F16C7B64900B62F51 /* EAGLView.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0E97115316C7B64900B62F51 /* MetaioSDKViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E97115116C7B64900B62F51 /* MetaioSDKViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0E97115716C7B7AD00B62F51 /* MetaioViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0E97115616C7B7AD00B62F51 /* MetaioViewController.mm */; };
+		0E97115E16C7B90200B62F51 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 0E97115D16C7B90200B62F51 /* Assets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E6EC25516C7B0E500786BCC /* metaio-3dscanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metaio-3dscanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E6EC25916C7B0E500786BCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0E6EC25B16C7B0E500786BCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0E6EC25D16C7B0E500786BCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0E6EC26116C7B0E500786BCC /* metaio-3dscanner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "metaio-3dscanner-Info.plist"; sourceTree = "<group>"; };
+		0E6EC26316C7B0E500786BCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0E6EC26516C7B0E500786BCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E6EC26716C7B0E500786BCC /* metaio-3dscanner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "metaio-3dscanner-Prefix.pch"; sourceTree = "<group>"; };
+		0E6EC26816C7B0E500786BCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0E6EC26916C7B0E500786BCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0E6EC26B16C7B0E500786BCC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0E6EC26D16C7B0E500786BCC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0E6EC26F16C7B0E500786BCC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0E6EC27216C7B0E500786BCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0E6EC27416C7B0E600786BCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0E6EC27516C7B0E600786BCC /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		0E6EC28016C7B49000786BCC /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		0E6EC28216C7B49C00786BCC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0E6EC28416C7B4A700786BCC /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0E6EC28616C7B4B300786BCC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0E6EC28816C7B4C100786BCC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0E6EC28A16C7B4CC00786BCC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0E6EC28C16C7B4D700786BCC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0E6EC28E16C7B4E300786BCC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0E6EC29016C7B4EF00786BCC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0E6EC29216C7B4FA00786BCC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0E6EC29416C7B50500786BCC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0E6EC29616C7B52400786BCC /* metaioSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = metaioSDK.framework; path = ../../../Lib/metaioSDK/SDK_iOS/metaioSDK.framework; sourceTree = "<group>"; };
+		0E97114E16C7B64900B62F51 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		0E97114F16C7B64900B62F51 /* EAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EAGLView.mm; sourceTree = "<group>"; };
+		0E97115016C7B64900B62F51 /* MetaioSDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaioSDKViewController.h; sourceTree = "<group>"; };
+		0E97115116C7B64900B62F51 /* MetaioSDKViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetaioSDKViewController.mm; sourceTree = "<group>"; };
+		0E97115516C7B7AC00B62F51 /* MetaioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaioViewController.h; sourceTree = "<group>"; };
+		0E97115616C7B7AD00B62F51 /* MetaioViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MetaioViewController.mm; sourceTree = "<group>"; };
+		0E97115D16C7B90200B62F51 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = "metaio-3dscanner/Assets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E6EC25216C7B0E500786BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6EC29716C7B52400786BCC /* metaioSDK.framework in Frameworks */,
+				0E6EC29516C7B50500786BCC /* MediaPlayer.framework in Frameworks */,
+				0E6EC29316C7B4FA00786BCC /* AVFoundation.framework in Frameworks */,
+				0E6EC29116C7B4EF00786BCC /* CoreLocation.framework in Frameworks */,
+				0E6EC28F16C7B4E300786BCC /* CoreMedia.framework in Frameworks */,
+				0E6EC28D16C7B4D700786BCC /* CoreVideo.framework in Frameworks */,
+				0E6EC28B16C7B4CC00786BCC /* QuartzCore.framework in Frameworks */,
+				0E6EC28916C7B4C100786BCC /* AudioToolbox.framework in Frameworks */,
+				0E6EC28716C7B4B300786BCC /* OpenGLES.framework in Frameworks */,
+				0E6EC28516C7B4A700786BCC /* CoreMotion.framework in Frameworks */,
+				0E6EC28316C7B49C00786BCC /* libxml2.dylib in Frameworks */,
+				0E6EC28116C7B49000786BCC /* libz.dylib in Frameworks */,
+				0E6EC25A16C7B0E500786BCC /* UIKit.framework in Frameworks */,
+				0E6EC25C16C7B0E500786BCC /* Foundation.framework in Frameworks */,
+				0E6EC25E16C7B0E500786BCC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E6EC24A16C7B0E500786BCC = {
+			isa = PBXGroup;
+			children = (
+				0E97115D16C7B90200B62F51 /* Assets */,
+				0E6EC25F16C7B0E500786BCC /* metaio-3dscanner */,
+				0E6EC25816C7B0E500786BCC /* Frameworks */,
+				0E6EC25616C7B0E500786BCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E6EC25616C7B0E500786BCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E6EC25516C7B0E500786BCC /* metaio-3dscanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0E6EC25816C7B0E500786BCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E6EC29616C7B52400786BCC /* metaioSDK.framework */,
+				0E6EC29416C7B50500786BCC /* MediaPlayer.framework */,
+				0E6EC29216C7B4FA00786BCC /* AVFoundation.framework */,
+				0E6EC29016C7B4EF00786BCC /* CoreLocation.framework */,
+				0E6EC28E16C7B4E300786BCC /* CoreMedia.framework */,
+				0E6EC28C16C7B4D700786BCC /* CoreVideo.framework */,
+				0E6EC28A16C7B4CC00786BCC /* QuartzCore.framework */,
+				0E6EC28816C7B4C100786BCC /* AudioToolbox.framework */,
+				0E6EC28616C7B4B300786BCC /* OpenGLES.framework */,
+				0E6EC28416C7B4A700786BCC /* CoreMotion.framework */,
+				0E6EC28216C7B49C00786BCC /* libxml2.dylib */,
+				0E6EC28016C7B49000786BCC /* libz.dylib */,
+				0E6EC25916C7B0E500786BCC /* UIKit.framework */,
+				0E6EC25B16C7B0E500786BCC /* Foundation.framework */,
+				0E6EC25D16C7B0E500786BCC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E6EC25F16C7B0E500786BCC /* metaio-3dscanner */ = {
+			isa = PBXGroup;
+			children = (
+				0E97114D16C7B64900B62F51 /* metaio */,
+				0E6EC26816C7B0E500786BCC /* AppDelegate.h */,
+				0E6EC26916C7B0E500786BCC /* AppDelegate.m */,
+				0E6EC27116C7B0E500786BCC /* MainStoryboard.storyboard */,
+				0E6EC27416C7B0E600786BCC /* ViewController.h */,
+				0E6EC27516C7B0E600786BCC /* ViewController.mm */,
+				0E97115516C7B7AC00B62F51 /* MetaioViewController.h */,
+				0E97115616C7B7AD00B62F51 /* MetaioViewController.mm */,
+				0E6EC26016C7B0E500786BCC /* Supporting Files */,
+			);
+			path = "metaio-3dscanner";
+			sourceTree = "<group>";
+		};
+		0E6EC26016C7B0E500786BCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E6EC26116C7B0E500786BCC /* metaio-3dscanner-Info.plist */,
+				0E6EC26216C7B0E500786BCC /* InfoPlist.strings */,
+				0E6EC26516C7B0E500786BCC /* main.m */,
+				0E6EC26716C7B0E500786BCC /* metaio-3dscanner-Prefix.pch */,
+				0E6EC26B16C7B0E500786BCC /* Default.png */,
+				0E6EC26D16C7B0E500786BCC /* Default@2x.png */,
+				0E6EC26F16C7B0E500786BCC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0E97114D16C7B64900B62F51 /* metaio */ = {
+			isa = PBXGroup;
+			children = (
+				0E97114E16C7B64900B62F51 /* EAGLView.h */,
+				0E97114F16C7B64900B62F51 /* EAGLView.mm */,
+				0E97115016C7B64900B62F51 /* MetaioSDKViewController.h */,
+				0E97115116C7B64900B62F51 /* MetaioSDKViewController.mm */,
+			);
+			path = metaio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E6EC25416C7B0E500786BCC /* metaio-3dscanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E6EC27916C7B0E600786BCC /* Build configuration list for PBXNativeTarget "metaio-3dscanner" */;
+			buildPhases = (
+				0E6EC25116C7B0E500786BCC /* Sources */,
+				0E6EC25216C7B0E500786BCC /* Frameworks */,
+				0E6EC25316C7B0E500786BCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "metaio-3dscanner";
+			productName = "metaio-3dscanner";
+			productReference = 0E6EC25516C7B0E500786BCC /* metaio-3dscanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E6EC24C16C7B0E500786BCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "TIS Inc.";
+			};
+			buildConfigurationList = 0E6EC24F16C7B0E500786BCC /* Build configuration list for PBXProject "metaio-3dscanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0E6EC24A16C7B0E500786BCC;
+			productRefGroup = 0E6EC25616C7B0E500786BCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E6EC25416C7B0E500786BCC /* metaio-3dscanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E6EC25316C7B0E500786BCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E97115E16C7B90200B62F51 /* Assets in Resources */,
+				0E6EC26416C7B0E500786BCC /* InfoPlist.strings in Resources */,
+				0E6EC26C16C7B0E500786BCC /* Default.png in Resources */,
+				0E6EC26E16C7B0E500786BCC /* Default@2x.png in Resources */,
+				0E6EC27016C7B0E500786BCC /* Default-568h@2x.png in Resources */,
+				0E6EC27316C7B0E500786BCC /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E6EC25116C7B0E500786BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6EC26616C7B0E500786BCC /* main.m in Sources */,
+				0E6EC26A16C7B0E500786BCC /* AppDelegate.m in Sources */,
+				0E6EC27616C7B0E600786BCC /* ViewController.mm in Sources */,
+				0E97115216C7B64900B62F51 /* EAGLView.mm in Sources */,
+				0E97115316C7B64900B62F51 /* MetaioSDKViewController.mm in Sources */,
+				0E97115716C7B7AD00B62F51 /* MetaioViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0E6EC26216C7B0E500786BCC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E6EC26316C7B0E500786BCC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0E6EC27116C7B0E500786BCC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E6EC27216C7B0E500786BCC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0E6EC27716C7B0E600786BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Debug;
+		};
+		0E6EC27816C7B0E600786BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0E6EC27A16C7B0E600786BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Lib/metaioSDK/SDK_iOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "metaio-3dscanner/metaio-3dscanner-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "metaio-3dscanner/metaio-3dscanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0E6EC27B16C7B0E600786BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Lib/metaioSDK/SDK_iOS\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "metaio-3dscanner/metaio-3dscanner-Prefix.pch";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "metaio-3dscanner/metaio-3dscanner-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E6EC24F16C7B0E500786BCC /* Build configuration list for PBXProject "metaio-3dscanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E6EC27716C7B0E600786BCC /* Debug */,
+				0E6EC27816C7B0E600786BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E6EC27916C7B0E600786BCC /* Build configuration list for PBXNativeTarget "metaio-3dscanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E6EC27A16C7B0E600786BCC /* Debug */,
+				0E6EC27B16C7B0E600786BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0E6EC24C16C7B0E500786BCC /* Project object */;
+}
