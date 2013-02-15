@@ -13,9 +13,7 @@
 
 @end
 
-@implementation MetaioViewController {
-    metaio::IGeometry *_model;
-}
+@implementation MetaioViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,8 +35,8 @@
     }
     
     NSString *modelFile = [self findAssetFromName:@"0_Remesh" ofType:@"obj"];
-    _model = m_metaioSDK->createGeometry([modelFile UTF8String]);
-    if (!_model) {
+    metaio::IGeometry *model = m_metaioSDK->createGeometry([modelFile UTF8String]);
+    if (!model) {
         [NSException raise:@"model create error" format:@"can't create model"];
     }
 }
@@ -51,7 +49,7 @@
 
 #pragma mark IBAction
 - (IBAction)onClickCloseBtn:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark private
